@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    font-family: Roboto;
+}
+section{
+    background-color: #181818;
+    color: white;
+    height: 227px;
+}
+footer {
+    background-color: rgb(0, 0, 0);
+    bottom: 0;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#redesSociaisLinks{
+    position: relative;
+    margin-left: 35px;
+    text-decoration: none;
+}
+#foxSocial{
+    margin-left: -2px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 50px;
+    height: 170px;
+}
+#foto{
+    width: 25px;
+    background-color: white;
+}
