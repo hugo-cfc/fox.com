@@ -128,14 +128,136 @@ main {
 
 #carousel {
   height: 615px;
+  width: 100vw;
+
+  padding: 0 65px;
+}
+
+#image-container {
+  width: 100vw;
+  height: inherit;
+
+  display: flex;
+}
+
+#image-container .control-carousel {
+  display: flex;
+  align-items: center;
+}
+
+#image-container svg.control-button {
+  width: 43px;
+  transition: all 0.1s ease-in-out;
+}
+
+#image-container svg.control-button:hover {
+  transform: scale(1.5);
 }
 
 #carousel #image {
-  width: 100%;
+  height: inherit;
+  width: 100vw;
 
-  height: 615px;
   background-image: url(../../assets/carrousel1.jpg);
-
   background-repeat: no-repeat;
-  background-position: right;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 416px 1fr;
+}
+
+.info-inside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: rgb(21, 21, 21);
+  background: linear-gradient(90deg, rgba(21, 21, 21, 1) 0%, rgba(21, 21, 21, 1) 50%, rgba(3, 60, 71, 0) 100%);
+}
+
+.time-div-carousel {
+  width: max-content;
+
+  padding: 4px 5px;
+
+  margin: 16px 0;
+
+  border: 1px solid #fff;
+
+  font-weight: 600;
+  font-size: 12px;
+  color: #fff;
+}
+
+.description span {
+  display: block;
+  line-height: 26px;
+
+  color: #fff;
+  font-size: 16px;
+}
+
+.description .info-episode {
+  font-weight: 500;
+}
+
+.description .sinopse {
+  font-size: 15px;
+  color: #d8d8d8;
+}
+
+.description .hour {
+  font-size: 12px;
+  color: #d8d8d8;
+}
+
+.box-buttons-carousel {
+  display: flex;
+
+  margin: 24px 0;
+}
+
+.box-buttons-carousel button {
+  border: none;
+  border-radius: 22px;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+
+  background-color: #0086bd;
+
+  padding: 13px;
+
+  transition: all 0.1s ease-in-out;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.box-buttons-carousel button svg {
+  width: 17px;
+
+  fill: #fff;
+
+  margin-right: 8px;
+}
+
+.box-buttons-carousel button:nth-child(2) {
+  margin-left: 13px;
+
+  background-color: transparent;
+
+  border: 1px solid hsla(0, 0%, 100%, 0.25);
+}
+
+.box-buttons-carousel button:hover {
+  transform: scale(1.1);
+}
+
+.box-buttons-carousel button:nth-child(2):hover {
+  border: 1px solid hsla(0, 0%, 100%, 1);
 }
