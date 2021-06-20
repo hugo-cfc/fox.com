@@ -1,12 +1,15 @@
 body {
   background-color: #181818;
 
-  font-family: "Roboto", sans-serif;
+  font-family: "Graphik", sans-serif;
 }
 
 header div {
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  height: inherit;
 }
 
 #box-channels {
@@ -15,6 +18,7 @@ header div {
 
 .channel-header {
   width: 191px;
+  height: 35.91px;
 
   color: #fff;
 
@@ -41,6 +45,7 @@ header div {
 
 .channel-header span {
   font-size: 11px;
+  
 
   display: none;
 }
@@ -51,12 +56,14 @@ header div {
 
 #header-fixed {
   width: 100%;
+  height: 73px;
 
-  padding: 25px 65px;
+  padding: 0px 65px;
 
   background-color: #000;
 
   position: fixed;
+  z-index: 999999;
 
   display: flex;
   justify-content: space-between;
@@ -65,6 +72,7 @@ header div {
 
 #tabs img {
   width: 57px;
+  height: fit-content;
 
   margin-right: 60px;
 }
@@ -72,22 +80,37 @@ header div {
 #tabs nav {
   display: flex;
   align-items: center;
+
+  height: inherit;
 }
 
 #tabs ul {
   padding: 0;
   margin: 0;
+
   list-style: none;
+
+  height: inherit;
+
+  display: flex;
+  align-items: center;
 }
 
 #tabs ul li {
-  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: inherit;
+  margin-right: 28px;
+}
+
+#tabs ul li.active {
+  border-bottom: 2px solid #0086bd;
 }
 
 #tabs ul li a {
   text-decoration: none;
-
-  padding-right: 28px;
 
   font-weight: 600;
 }
@@ -102,12 +125,13 @@ header div {
   padding: 8px;
 
   border: 1px solid #ffffff40;
-
   border-radius: 17px;
 
   color: #ffffffbf;
 
   margin-right: 16px;
+
+  height: fit-content;
 }
 
 #signin-search button:hover {
@@ -123,48 +147,74 @@ header div {
 }
 
 main {
-  margin-top: 83px;
+  margin-top: 73px;
+  position: relative;
 }
 
-#carousel {
+.carousel {
   height: 615px;
-  width: 100vw;
+  max-width: 100vw;
 
-  padding: 0 65px;
-}
-
-#image-container {
-  width: 100vw;
-  height: inherit;
-
-  display: flex;
-}
-
-#image-container .control-carousel {
-  display: flex;
-  align-items: center;
-}
-
-#image-container svg.control-button {
-  width: 43px;
-  transition: all 0.1s ease-in-out;
-}
-
-#image-container svg.control-button:hover {
-  transform: scale(1.5);
-}
-
-#carousel #image {
-  height: inherit;
-  width: 100vw;
+  position: relative;
 
   background-image: url(../../assets/carrousel1.jpg);
   background-repeat: no-repeat;
+  background-position: right;
+  background-size: 80% 1000px;
+}
+
+.carousel2 {
+  background-image: url(../../assets/carrousel2.jpg);
+}
+
+.carousel3 {
+  background-image: url(../../assets/carrousel3.jpg);
+}
+
+.image-container {
+  width: 100vw;
+  height: inherit;
+
+  display: flex;
+}
+
+.image-container .control-carousel-left {
+  width: 130px;
+
+  padding-right: 30px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  background-color: #151515;
+}
+
+svg.control-button {
+  width: 43px;
+
+  position: absolute;
+  top: 280px;
+  z-index: 999;
+
+  transition: all 0.1s ease-in-out;
+}
+
+svg.control-button:hover {
+  transform: scale(1.5);
+}
+
+.control-button-left {
+  left: 57px;
+}
+
+.control-button-right {
+  right: 57px;
 }
 
 .info {
   display: grid;
-  grid-template-columns: 416px 1fr;
+  width: 416px;
 }
 
 .info-inside {
@@ -173,7 +223,15 @@ main {
   justify-content: center;
 
   background: rgb(21, 21, 21);
-  background: linear-gradient(90deg, rgba(21, 21, 21, 1) 0%, rgba(21, 21, 21, 1) 50%, rgba(3, 60, 71, 0) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(21, 21, 21, 1) 0%,
+    rgba(21, 21, 21, 1) 64%,
+    rgba(21, 21, 21, 0.8029586834733894) 75%,
+    rgba(21, 21, 21, 0.7693452380952381) 79%,
+    rgba(21, 21, 21, 0.68531162464986) 85%,
+    rgba(21, 21, 21, 0) 99%
+  );
 }
 
 .time-div-carousel {
@@ -260,4 +318,26 @@ main {
 
 .box-buttons-carousel button:nth-child(2):hover {
   border: 1px solid hsla(0, 0%, 100%, 1);
+}
+
+.slick-dots {
+  background-color: rgba(0, 0, 0, 0.2);
+
+  width: auto;
+
+  border-radius: 23.4px;
+
+  bottom: 29px;
+  right: 57px;
+}
+
+.slick-dots li button:before {
+  font-size: 13px;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff;
+  opacity: 1;
 }

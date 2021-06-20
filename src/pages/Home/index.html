@@ -4,18 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../lib/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="../../lib/slick-1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="../../globalStyle.css" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
     <title>Fox | Watch Live Shows and Stream Full Episodes Online</title>
   </head>
-  <body>
+  <body onscroll="hideFirstHeader()">
     <header>
-      <div>
+      <div id="first-header">
         <div id="box-channels">
           <div class="channel-header">
             <img src="../../assets/foxnews.jpg" alt="foxnews" />
@@ -44,7 +41,7 @@
           <img src="../../assets/foxtv.png" alt="foxlogo" />
           <nav>
             <ul>
-              <li><a href="">Home</a></li>
+              <li class="active"><a href="">Home</a></li>
               <li><a href="">Entertainment</a></li>
               <li><a href="">Sports</a></li>
               <li><a href="">Local</a></li>
@@ -97,87 +94,162 @@
       </div>
     </header>
     <main>
-      <section id="carousel">
-        <div id="image-container">
-          <div class="control-carousel">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="control-button"
-              viewBox="0 0 43 44"
-              preserveAspectRatio="xMidYMid meet"
-              data-testid="carousel-arrow-left-icon"
-              aria-hidden="true"
-              role="button"
-              focusable="true"
-            >
-              <g fill="none" fill-rule="evenodd">
-                <g transform="translate(4 1.32)">
-                  <filter fill="#000" width="139.7%" height="139.7%" x="-19.8%" y="-14.2%" filterUnits="objectBoundingBox">
-                    <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1" />
-                    <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2" />
-                    <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" />
-                  </filter>
-                  <circle fill="#FFF" cx="18" cy="18" r="17.634" />
-                </g>
-                <path stroke="#000" stroke-width="2" d="M17.345 19.32l6.904-6.905.406.406-6.499 6.5 6.5 6.498-.407.407-6.904-6.905z" />
-              </g>
-            </svg>
-          </div>
-          <div class="info">
-            <div class="info-inside">
-              <img src="../../assets/progcarr1name.png" alt="" />
-              <div class="time-div-carousel">CATCH UP BEFORE ALL-NEW TOMORROW 9:30/8:30C</div>
-              <div class="description">
-                <span class="info-episode">S20 E2 Young Guns: Temping the Meat</span>
-                <span class="sinopse">Annie and Jack want Duncan and Kimberly to stop fighting with each other.</span>
-                <span class="hour">6-7-21 • 43m</span>
-                <div class="box-buttons-carousel">
-                  <button>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon__2tBs- white__1SSXF"
-                      viewBox="0 0 24 24"
-                      preserveAspectRatio="xMidYMid meet"
-                      aria-hidden="true"
-                      role="button"
-                      focusable="true"
-                    >
-                      <g><path id="Rectangle-3" d="M4.966,0.958l17.087,10.806l-17.087,10.693l0,-21.499Z" /></g>
-                    </svg>
-                    Watch now
-                  </button>
-                  <button>More Episodes</button>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="control-button control-button-left"
+        viewBox="0 0 43 44"
+        preserveAspectRatio="xMidYMid meet"
+        data-testid="carousel-arrow-left-icon"
+        aria-hidden="true"
+        role="button"
+        focusable="true"
+      >
+        <g fill="none" fill-rule="evenodd">
+          <g transform="translate(4 1.32)">
+            <filter fill="#000" width="139.7%" height="139.7%" x="-19.8%" y="-14.2%" filterUnits="objectBoundingBox">
+              <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1" />
+              <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2" />
+              <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" />
+            </filter>
+            <circle fill="#FFF" cx="18" cy="18" r="17.634" />
+          </g>
+          <path stroke="#000" stroke-width="2" d="M17.345 19.32l6.904-6.905.406.406-6.499 6.5 6.5 6.498-.407.407-6.904-6.905z" />
+        </g>
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="control-button control-button-right"
+        viewBox="0 0 43 44"
+        preserveAspectRatio="xMidYMid meet"
+        data-testid="carousel-arrow-right-icon"
+        aria-hidden="true"
+        role="button"
+        focusable="true"
+      >
+        <g fill="none" fill-rule="evenodd">
+          <g transform="translate(3 2)">
+            <filter fill="#000" width="139.7%" height="139.7%" x="-19.8%" y="-14.2%" filterUnits="objectBoundingBox">
+              <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1" />
+              <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2" />
+              <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" />
+            </filter>
+            <circle fill="#FFF" cx="18" cy="18" r="17.634" />
+          </g>
+          <path stroke="#000" stroke-width="2" d="M26.655 20l-6.904 6.906-.406-.407L25.844 20l-6.5-6.5.407-.406L26.655 20V20z" />
+        </g>
+      </svg>
+      <div id="carousel-mask">
+        <div class="carousel-slick">
+          <div>
+            <section class="carousel">
+              <div class="image-container">
+                <div class="control-carousel-left"></div>
+                <div class="info">
+                  <div class="info-inside">
+                    <img src="../../assets/progcarr1name.png" alt="" />
+                    <div class="time-div-carousel">CATCH UP BEFORE ALL-NEW TOMORROW 9:30/8:30C</div>
+                    <div class="description">
+                      <span class="info-episode">S20 E2 Young Guns: Temping the Meat</span>
+                      <span class="sinopse">Annie and Jack want Duncan and Kimberly to stop fighting with each other.</span>
+                      <span class="hour">6-7-21 • 43m</span>
+                      <div class="box-buttons-carousel">
+                        <button>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon__2tBs- white__1SSXF"
+                            viewBox="0 0 24 24"
+                            preserveAspectRatio="xMidYMid meet"
+                            aria-hidden="true"
+                            role="button"
+                            focusable="true"
+                          >
+                            <g><path id="Rectangle-3" d="M4.966,0.958l17.087,10.806l-17.087,10.693l0,-21.499Z" /></g>
+                          </svg>
+                          Watch now
+                        </button>
+                        <button>More Episodes</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div id="image"></div>
+            </section>
           </div>
-          <div class="control-carousel">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="control-button"
-              viewBox="0 0 43 44"
-              preserveAspectRatio="xMidYMid meet"
-              data-testid="carousel-arrow-right-icon"
-              aria-hidden="true"
-              role="button"
-              focusable="true"
-            >
-              <g fill="none" fill-rule="evenodd">
-                <g transform="translate(3 2)">
-                  <filter fill="#000" width="139.7%" height="139.7%" x="-19.8%" y="-14.2%" filterUnits="objectBoundingBox">
-                    <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1" />
-                    <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2" />
-                    <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" />
-                  </filter>
-                  <circle fill="#FFF" cx="18" cy="18" r="17.634" />
-                </g>
-                <path stroke="#000" stroke-width="2" d="M26.655 20l-6.904 6.906-.406-.407L25.844 20l-6.5-6.5.407-.406L26.655 20V20z" />
-              </g>
-            </svg>
+          <div>
+            <section class="carousel carousel2">
+              <div class="image-container">
+                <div class="control-carousel-left"></div>
+                <div class="info">
+                  <div class="info-inside">
+                    <img src="../../assets/progcarr2name.png" alt="" />
+                    <div class="time-div-carousel">CATCH UP BEFORE ALL-NEW TOMORROW 9:30/8:30C</div>
+                    <div class="description">
+                      <span class="info-episode">S20 E2 Young Guns: Temping the Meat</span>
+                      <span class="sinopse">Annie and Jack want Duncan and Kimberly to stop fighting with each other.</span>
+                      <span class="hour">6-7-21 • 43m</span>
+                      <div class="box-buttons-carousel">
+                        <button>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon__2tBs- white__1SSXF"
+                            viewBox="0 0 24 24"
+                            preserveAspectRatio="xMidYMid meet"
+                            aria-hidden="true"
+                            role="button"
+                            focusable="true"
+                          >
+                            <g><path id="Rectangle-3" d="M4.966,0.958l17.087,10.806l-17.087,10.693l0,-21.499Z" /></g>
+                          </svg>
+                          Watch now
+                        </button>
+                        <button>More Episodes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div>
+            <section class="carousel carousel3">
+              <div class="image-container">
+                <div class="control-carousel-left"></div>
+                <div class="info">
+                  <div class="info-inside">
+                    <img src="../../assets/progcarr3name.png" alt="" />
+                    <div class="time-div-carousel">CATCH UP BEFORE ALL-NEW TOMORROW 9:30/8:30C</div>
+                    <div class="description">
+                      <span class="info-episode">S20 E2 Young Guns: Temping the Meat</span>
+                      <span class="sinopse">Annie and Jack want Duncan and Kimberly to stop fighting with each other.</span>
+                      <span class="hour">6-7-21 • 43m</span>
+                      <div class="box-buttons-carousel">
+                        <button>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon__2tBs- white__1SSXF"
+                            viewBox="0 0 24 24"
+                            preserveAspectRatio="xMidYMid meet"
+                            aria-hidden="true"
+                            role="button"
+                            focusable="true"
+                          >
+                            <g><path id="Rectangle-3" d="M4.966,0.958l17.087,10.806l-17.087,10.693l0,-21.499Z" /></g>
+                          </svg>
+                          Watch now
+                        </button>
+                        <button>More Episodes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
-      </section>
+      </div>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../../lib/slick-1.8.1/slick/slick.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
   </body>
 </html>
