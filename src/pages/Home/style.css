@@ -25,12 +25,32 @@ header div {
   align-items: center;
 }
 
+.channel-foxnews img {
+  width: 30px;
+}
+
+.channel-foxbusiness img {
+  width: 41px;
+}
+
 .channel-header:hover {
   background-color: #244291;
 }
 
+.channel-nation img {
+  width: 32px;
+}
+
 .channel-nation:hover {
   background-color: #bc2333;
+}
+
+.channel-foxsports img {
+  width: 50px;
+}
+
+.channel-tubi img {
+  width: 39px;
 }
 
 .channel-tubi:hover {
@@ -38,20 +58,45 @@ header div {
 }
 
 .channel-header img {
-  width: 38px;
-
   margin-right: 30px;
+}
+
+.channel-header:hover img {
+  animation-duration: 0.3s;
+  animation-name: slideinimg;
+}
+
+@keyframes slideinimg {
+  0% {
+    -o-transform: translateX(+30px);
+    transform: translateX(+30px);
+  }
+  100% {
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 
 .channel-header span {
   font-size: 11px;
-  
 
   display: none;
 }
 
 .channel-header:hover span {
   display: block;
+
+  animation-duration: 0.3s;
+  animation-name: slideinspan;
+}
+
+@keyframes slideinspan {
+  0% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 #header-fixed {
@@ -112,11 +157,19 @@ header div {
 #tabs ul li a {
   text-decoration: none;
 
+  color: hsla(0, 0%, 100%, 0.75);
+
   font-weight: 600;
+
+  transition: color 0.5s;
 }
 
 #tabs ul li a:visited {
-  color: #ffffffbf;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+#tabs ul li a:hover {
+  color: #fff;
 }
 
 #signin-search button {
@@ -144,6 +197,16 @@ header div {
   margin-left: 6px;
 
   fill: #ffffffbf;
+}
+
+#signin-search svg {
+  color: hsla(0, 0%, 100%, 0.75);
+
+  transition: fill 0.5s;
+}
+
+#signin-search svg:hover {
+  fill: #fff;
 }
 
 main {
@@ -340,4 +403,119 @@ svg.control-button:hover {
 .slick-dots li.slick-active button:before {
   color: #fff;
   opacity: 1;
+}
+
+.carousel-mask {
+  position: relative;
+}
+
+.carousel-mask2 {
+  padding: 0 65px;
+  margin-bottom: 40px;
+}
+
+.carousel-mask2 h2 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+
+  margin-bottom: 40px;
+}
+
+.item-carousel2 {
+  height: 548px;
+  width: 411px;
+
+  background-image: url("../../assets/carrousel1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+}
+
+.content-carousel2 {
+  height: 100%;
+  width: 100%;
+
+  color: #fff;
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, 0.623686974789916) 69%, rgba(0, 0, 0, 0) 80%);
+}
+
+.header-item-carousel2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px;
+}
+
+.alert-item-carousel2 {
+  background-color: rgba(0, 155, 255, 0.65);
+  border: 1px solid rgba(0, 155, 255, 0.65);
+  border-radius: 0.1875rem;
+
+  font-weight: 100;
+  font-size: 0.625rem;
+  padding: 0.1875rem 0.25rem 0.125rem;
+
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
+}
+
+.header-item-carousel2 svg {
+  width: 23px;
+}
+
+.play-button-container-carousel2 {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  margin-top: 50px;
+}
+
+.play-button-container-carousel2 svg {
+  width: 85px;
+}
+
+.icon-container-carousel2 {
+  width: 100%;
+
+  margin-top: 50px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.name-episode-carousel2 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+
+  margin-top: 30px;
+}
+
+.sinopse-episode-carousel2 {
+  text-align: center;
+  font-size: 0.8em;
+  opacity: 0.5;
+
+  margin-top: 40px;
+
+  padding: 0 40px;
+}
+
+.more-episodes-carousel2 {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.more-episodes-carousel2 a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.8em;
+}
+
+.more-episodes-carousel2 a:visited {
+  color: #fff;
 }

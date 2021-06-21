@@ -1,9 +1,9 @@
 $(document).ready(function () {
   $(".carousel-slick").slick({
     infinite: true,
-    autoPlay: true,
     dots: true,
-    autoplaySpeed: 2,
+    autoplay: true,
+    autoplaySpeed: 2000,
     prevArrow: $(".control-button-left"),
     nextArrow: $(".control-button-right"),
   });
