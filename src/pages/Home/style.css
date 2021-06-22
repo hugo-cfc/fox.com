@@ -422,13 +422,115 @@ svg.control-button:hover {
   margin-bottom: 40px;
 }
 
-.item-carousel2 {
-  height: 548px;
-  width: 411px;
+.carrousel-slick2 .slick-track {
+  height: 30.4vw;
+}
 
-  background-image: url("../../assets/carrousel1.jpg");
+.slick-prev,
+.slick-next {
+  z-index: 2000;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px;
+}
+
+.carrousel-slick2 .slick-disabled {
+  display: none;
+}
+
+.item-carousel2 {
+  height: 28.8vw;
+  width: 100%;
+
+  padding: 2.5%;
+
   background-repeat: no-repeat;
-  background-size: 100% 50%;
+  background-size: 95% 50%;
+
+  background-position-x: 50%;
+  background-position-y: 4.5%;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.item-carousel2:hover {
+  transform: scale(1.07);
+
+  margin-top: 10px;
+}
+
+.item-carousel2:hover .more-episodes-carousel2 {
+  display: block;
+}
+
+.item-carousel2:hover .header-item-carousel2 svg {
+  display: flex;
+}
+
+.item1-car2 {
+  background-image: url("../../assets/carrousel1.jpg");
+}
+
+.item1-car2:hover {
+  background-image: url("../../assets/carrousel2.jpg");
+}
+
+.item2-car2 {
+  background-image: url("../../assets/carrousel2.jpg");
+}
+
+.item2-car2:hover {
+  background-image: url("../../assets/carrousel21.jpg");
+}
+
+.item3-car2 {
+  background-image: url("../../assets/carrousel3.jpg");
+}
+
+.item3-car2:hover {
+  background-image: url("../../assets/carrousel33.jpg");
+}
+
+.item4-car2 {
+  background-image: url("../../assets/secondcarrousel1.jpg");
+}
+
+.item4-car2:hover {
+  background-image: url("../../assets/secondcarrousel11.jpg");
+}
+
+.item5-car2 {
+  background-image: url("../../assets/secondcarrousel6.jpg");
+}
+
+.item5-car2:hover {
+  background-image: url("../../assets/secondcarrousel66.jpg");
+}
+
+.item6-car2 {
+  background-image: url("../../assets/secondcarrousel3.jpg");
+}
+
+.item6-car2:hover {
+  background-image: url("../../assets/secondcarrousel33.jpg");
+}
+
+.item7-car2 {
+  background-image: url("../../assets/secondcarrousel2.jpg");
+}
+
+.item7-car2:hover {
+  background-image: url("../../assets/secondcarrousel22.jpg");
+}
+
+.item8-car2 {
+  background-image: url("../../assets/secondcarrousel7.jpg");
+}
+
+.item8-car2:hover {
+  background-image: url("../../assets/secondcarrousel5.jpg");
 }
 
 .content-carousel2 {
@@ -463,6 +565,8 @@ svg.control-button:hover {
 
 .header-item-carousel2 svg {
   width: 23px;
+
+  display: none;
 }
 
 .play-button-container-carousel2 {
@@ -471,43 +575,55 @@ svg.control-button:hover {
   display: flex;
   justify-content: center;
 
-  margin-top: 50px;
+  margin-top: 2.5vw;
 }
 
 .play-button-container-carousel2 svg {
-  width: 85px;
+  width: 3.5vw;
 }
 
 .icon-container-carousel2 {
   width: 100%;
 
-  margin-top: 50px;
+  padding: 0 100px;
+
+  margin-top: 1.5vw;
 
   display: flex;
   justify-content: center;
 }
 
+.icon-container-carousel2 img {
+  max-width: 375px;
+  max-height: 80px;
+  width: 17vw;
+}
+
 .name-episode-carousel2 {
   text-align: center;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 0.813rem;
+  font-weight: 600;
 
   margin-top: 30px;
 }
 
 .sinopse-episode-carousel2 {
+  font-size: 12px;
   text-align: center;
-  font-size: 0.8em;
   opacity: 0.5;
+
+  width: 100%;
 
   margin-top: 40px;
 
-  padding: 0 40px;
+  padding: 0 2vw;
 }
 
 .more-episodes-carousel2 {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 5.7vw;
+
+  display: none;
 }
 
 .more-episodes-carousel2 a {
@@ -518,4 +634,18 @@ svg.control-button:hover {
 
 .more-episodes-carousel2 a:visited {
   color: #fff;
+}
+
+@media (max-width: 1400px) {
+  .sinopse-episode-carousel2 {
+    margin-top: 1.5vw;
+  }
+
+  .more-episodes-carousel2 {
+    margin-top: 3vw;
+  }
+
+  .icon-container-carousel2 img {
+    max-height: 60px;
+  }
 }

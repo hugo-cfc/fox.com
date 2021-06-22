@@ -4,8 +4,17 @@ $(document).ready(function () {
     dots: true,
     autoplay: true,
     autoplaySpeed: 2000,
+    pauseOnHover: true,
+    pauseOnDotsHover: true,
     prevArrow: $(".control-button-left"),
     nextArrow: $(".control-button-right"),
+  });
+
+  $(".carrousel-slick2").slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    ltr: true,
+    infinite: false,
   });
 });
 
