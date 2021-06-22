@@ -1,54 +1,177 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="../../globalStyle.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="style.css">
+
   <title>Document</title>
 </head>
+
 <body>
-    <section>
-      <div id="conteudo">
-        <div id="popular_shows">
-          <h1>sda</h1>
-        </div>
-        <div id="animation">
-        </div>
-        <div id="drama">
-        </div>
-        <div id="unscipted">
-        </div>
-        <div id="comedy">
+  <section id="section">
+
+    <div>
+      <p>Popular shows</p>
+    </div>
+
+    <div id="button">
+      <img src="/assets/bottom/rightArrow.PNG" alt="" class="button">
+      <img src="/assets/bottom/leftArrow.png" alt="" class="button">
+    </div>
+    <div class="popular_shows">
+
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s1(1).jpg" alt="" class="popularShowsMargin"></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s1(2).jpg" alt="" class="popularShowsMargin"></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s1(3).jpg" alt="" class="popularShowsMargin"></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s1.jpg" alt="" class="popularShowsMargin"></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s13.jpg" alt="" class="popularShowsMargin"></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s2(1).jpg" alt="" class="popularShowsMargin"></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s2.jpg" alt="" class="popularShowsMargin"></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s20.jpg" alt="" class="popularShowsMargin"></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s3(1).jpg" alt="" class="popularShowsMargin"></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s3.jpg" alt="" class="popularShowsMargin"></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s33.jpg" alt="" class="popularShowsMargin"></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s4.jpg" alt="" class="popularShowsMargin"></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s4_v2.jpg" alt="" class="popularShowsMargin"></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s5.jpg" alt="" class="popularShowsMargin"></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s5b.jpg" alt="" class="popularShowsMargin"></div>
+    </div>
+
+    </div>
+
+    <div id="announcement">
+      <div><img
+          src="/assets/Stream FOX TV Shows_ Action, Animation, Drama, Reality..._files/FOXNOW-CRM-Masterchef-S11-Evergreen-Tonight-Web-2080x210-r2.jpg"
+          alt="" id="announcement"></div>
+    </div>
+
+    <div>
+      <p>Animation</p>
+    </div>
+
+    <div class="animation">
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s1.jpg" alt="" class="popularShowsMargin"></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s4 1.jpg" alt="" class="popularShowsMargin"></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s2(1).jpg" alt="" class="popularShowsMargin"></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s20.jpg" alt="" class="popularShowsMargin"></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s33.jpg" alt="" class="popularShowsMargin"></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s3 (1).jpg" alt="" class="popularShowsMargin"></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s12.jpg" alt="" class="popularShowsMargin"></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s7.jpg" alt="" class="popularShowsMargin"></div>
+    </div>
+
+    <div>
+      <p>Drama</p>
+    </div>
+
+    <div class="drama">
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s2.jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s4_v2.jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s1(2).jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s1Next.jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s2(1).jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s20 (1).jpg" alt=""></div>
+    </div>
+
+    <div>
+      <p>Unscripted</p>
+    </div>
+
+    <div class="unscripted">
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s20 (1).jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s20.jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s4_v2.jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s33.jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s1(2).jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s1(3).jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s4_v2.jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s33.jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s1(2).jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s1(3).jpg" alt=""></div>
+    </div>
+
+    <div>
+      <p>Comedy</p>
+    </div>
+
+    <div class="comedy">
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s1(3).jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s2(1).jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s4.jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s5b.jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s3(1).jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s5b.jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s4.jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s3(1).jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s33.jpg" alt=""></div>
+      <div><img src="/assets/POPULAR SHOWS/dcg-mark-poster_s20.jpg" alt=""></div>
+    </div>
+
+  </section>
+  <footer id="rodape">
+    <div id="redesSociais">
+      <p id="foxSocial">FOX Social</p>
+      <div id="linksSocialMidia">
+        <div class="child2" id="facebook"><a href="https://www.facebook.com/FOXTV"><img
+              src="icons/logotipo-social-quadrado-do-facebook.png" alt="" id="foto">facebook.com/FOXTV</a></div>
+        <div class="child2" id="twitter"><a href="https://twitter.com/FOXTV"><img src="icons/twitter.png" alt=""
+              id="foto">@FOXTV</a></div>
+        <div class="child2" id="instagram"><a href="https://www.instagram.com/foxtv/"><img src="icons/instagram.png"
+              alt="" id="foto">@foxtv</a></div>
+        <div class="child2" id="pinterest"><a href="https://br.pinterest.com/foxbroadcasting/"><img
+              src="icons/pinterest.png" alt="" id="foto">pinterest.com/foxbroadcasting</a>
         </div>
       </div>
-    </section>
-    <footer id="rodape">
-      <p id="foxSocial">FOX Social</p>
-          <div id="redesSociais">
-                <div class="child" id="facebook"><a href="https://www.facebook.com/FOXTV" ><img src="icons/logotipo-social-quadrado-do-facebook.png" alt="" id="foto">facebook.com/FOXTV</a></div>
-                <div class="child" id="twitter"><a href="https://twitter.com/FOXTV" ><img src="icons/twitter.png" alt="" id="foto">@FOXTV</a></div>
-                <div class="child" id="instagram"><a href="https://www.instagram.com/foxtv/" ><img src="icons/instagram.png" alt="" id="foto">@foxtv</a></div>
-                <div class="child" id="pinterest"><a href="https://br.pinterest.com/foxbroadcasting/" ><img src="icons/pinterest.png" alt="" id="foto">pinterest.com/foxbroadcasting</a></div>
-          </div>
-        <hr class="listra">
-        <div id="linksContainer">
-          <div class="foxLinks">
-            <div class="linkChild">FOX Links</div>
-            <div class="linkChild">Get FOX NOW</div>
-            <div class="linkChild">Casting Calls</div>
-            <div class="linkChild">Audio Description</div>
-            <div class="linkChild">Local Stations</div>
-            <div class="linkChild">Shop</div>
-            <div class="linkChild">Closed Captioning</div>
-            <div class="linkChild">Careers</div>
-            <div class="linkChild">Support and FAQs</div>
-            <div class="linkChild">Sitemap</div>
-            <div class="linkChild">Viewer Feedback</div>
-            <div class="linkChild">TV Parental Guidelines</div>
-          </div>
+    </div>
+    <hr class="listra">
+    <!-- Aqui começa a parte de menu de navegação do footer -->
+    <div id="linksContainer">
+      <div id="links">
+        <p class="child1">FOX Links</p>
+        <p class="child1">FOX Networks</p>
+      </div>
+      <div id="containerTeste3">
+        <div id="foxLinks">
+          <ul id="right-side">
+            <li>Get FOX NOW</li>
+            <li>Casting Calls</li>
+            <li>Audio Description</li>
+            <li>Local Stations</li>
+            <li>Shop</li>
+            <li>Closed Captioning</li>
+            <li>Careers</li>
+            <li>Support and FAQs</li>
+            <li>Sitemap</li>
+            <li>Viewer Feedback</li>
+            <li>TV Parental Guidelines</li>
+          </ul>
         </div>
-    </footer>
+        <ul id="left-side">
+          <li>FOX Sports</li>
+          <li>FOX News</li>
+          <li>Business News</li>
+        </ul>
+      </div>
+      <!-- Fim-->
+      <hr>
+      <div id="copyright">
+        <img src="/assets/foxtv.png" alt="foxtv" id="foxTv">
+        <div id="copyrightText">Trademark & Copyright Notice: ™ and © 2021 Fox Media LLC. All rights reserved. Use of
+          this Website (including any and all parts and components) constitutes your acceptance of these <b
+            class="bolder">Terms of Use</b> and <b class="bolder">Privacy Policy</b>. <b class="bolder">DO NOT SELL MY
+            PERSONAL INFORMATION</b> </div>
+      </div>
+  </footer>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="app.js"></script>
+
+
 </body>
+
 </html>

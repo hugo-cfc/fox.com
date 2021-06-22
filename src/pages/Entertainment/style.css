@@ -1,53 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 body{
-    font-family: Roboto;
+    font-family: Graphik,sans-serif;
+    font-weight: bolder;
     background-color: #181818;
+    
 }
 section{
     color: white;
+    padding: 0px 25px 0px 25px;
 }
 footer {
     background-color: rgb(0, 0, 0);
     bottom: 0;
     width: 100%;
-    position: absolute;
+    position: relative;
     color: white;
-    padding: 40px;
+    height: 761px;
+    padding: 40px 36px 0px 36px;
 }
 a{  
     color: rgb(139, 137, 137);
     text-decoration: none;
 }
+hr{
+    border-color: #474747; 
+}
+li{
+    height: 36px;
+}
+ul{
+    list-style: none;
+}
+
+
+/** SECTION **/
+#section{
+    font-size: 18px;
+}
+.popularShowsMargin{
+    height: 312px;
+}
+#announcement{
+    width: 100%;
+}
+
+#button{
+    display: flex;
+    justify-content: space-between;
+    border-radius;
+}
+.button{
+    width: 30px;
+    position: relative;
+}
+/** END SECTION **/
+
+/** FOOTER **/
+.child2{
+    height: 36px;
+    width: 305px;
+}
 
 #foto{
+    margin-left: -10px;
     width: 25px;
     background-color: white;
 }
 #redesSociais{
-    margin-left: -10px;
+    height: 161px;
+}
+#linksSocialMidia{
     display: flex;
+    height: 120px;
+    align-items: center;
     justify-content: space-between;
-    padding-bottom: 60px;
-    margin-right: 65px;
 }
 
-.child{
-    text-align: end;
-   
-}
 #foxSocial{
-    font-size: 27px;
-    height: 50px;
+    font-size: 24px;   
+    padding-top: 12px;
+    width: 100%;
 }
 
-hr{
-    border-color: #474747; 
-}
 
-#linksContainer {
+#linksContainer{
+    height: 300px;
+    margin: 50px 0px 50px 0px;
+}
+#links{
+    display: grid;
+    grid-template-areas: "child1 child1";
+    font-size: 24px;
+    height: 73px;
+}
+#containerTeste3{
     display: flex;
+    padding-bottom: 46px;
+    color: #8f8e8e;
 }
-.foxLinks{
-    flex-direction: row;
+
+#right-side{
+    display: grid;
+    grid-template-areas: "li li";
+}
+#left-side{
+    display: grid;
+    grid-template-areas: "li li";
+    height: 70px;
+    width: 100vh;
+}
+
+#foxLinks{
+    width: 598px;
     
 }
+#foxTv{
+    width: 59px;
+    height: 28px;
+    margin-right: -120px;
+}
+#copyrightText{
+    width: 950px;
+    height: 42px;
+    margin-right: 60px;
+    font-size: 14px;
+    color:#a1a1a1;
+}
+#copyright{
+    margin-left: -70px;
+    padding-top: 24px;
+    height: 102px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bolder{
+    color: white;
+}
+
+/** fim FOOTER **/
