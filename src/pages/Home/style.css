@@ -437,7 +437,7 @@ svg.control-button:hover {
 }
 
 .carrousel-slick2 .slick-disabled {
-  display: none;
+  display: none !important;
 }
 
 .item-carousel2 {
@@ -567,6 +567,14 @@ svg.control-button:hover {
   width: 23px;
 
   display: none;
+
+  cursor: pointer;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.header-item-carousel2 svg:hover {
+  transform: scale(1.2);
 }
 
 .play-button-container-carousel2 {
@@ -580,6 +588,14 @@ svg.control-button:hover {
 
 .play-button-container-carousel2 svg {
   width: 3.5vw;
+
+  cursor: pointer;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.play-button-container-carousel2 svg:hover {
+  transform: scale(1.2);
 }
 
 .icon-container-carousel2 {
@@ -634,6 +650,129 @@ svg.control-button:hover {
 
 .more-episodes-carousel2 a:visited {
   color: #fff;
+}
+
+.wrapper-ads {
+  padding: 0 75px;
+}
+.wrapper-ads img {
+  width: 100%;
+
+  cursor: pointer;
+}
+
+footer {
+  background-color: #000;
+  color: white;
+
+  padding: 40px 65px 0px 65px;
+}
+
+footer a {
+  color: rgb(139, 137, 137);
+  text-decoration: none;
+}
+
+hr.divider-footer {
+  border-color: #474747;
+}
+
+.title-sections {
+  font-size: 24px;
+  font-weight: 500;
+
+  margin-top: 12px;
+}
+
+#container-inside-social-networks {
+  display: flex;
+  align-items: center;
+
+  margin-top: 34px;
+}
+
+.social-networks-item {
+  width: 25%;
+}
+
+.social-networks-item a {
+  display: flex;
+  align-items: center;
+}
+
+.item-social-facebook a {
+  align-items: flex-end;
+}
+
+.item-social-facebook img {
+  margin-left: -10px;
+}
+
+.icon-social-networks {
+  width: 25px;
+
+  margin-right: 8px;
+
+  background-color: white;
+}
+
+#foxsocial-networks-container {
+  margin-bottom: 52px;
+}
+
+#container-links-fox {
+  padding: 50px 0px;
+}
+
+#grid-container-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.links-sides {
+  display: block;
+
+  color: #8f8e8e;
+
+  margin-top: 40px;
+}
+
+.links-sides a {
+  width: 49%;
+
+  display: inline-flex;
+
+  line-height: 1.88;
+}
+
+#copyright-container {
+  padding-top: 42px;
+  padding-bottom: 71px;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  color: #a1a1a1;
+}
+
+#copyright-container img {
+  width: 86px;
+}
+
+.bolder {
+  color: white;
+}
+
+#foxTvicon {
+  margin-right: 46px;
+}
+
+#copyrightText {
+  margin-right: 60px;
 }
 
 @media (max-width: 1400px) {
